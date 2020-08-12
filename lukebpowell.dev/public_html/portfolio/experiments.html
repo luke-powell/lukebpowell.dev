@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Luke Powell - Experiments</title>
+		<meta name="author" content="Luke Powell">
+		<meta name="description" content="Background and Portfolio of a Full Stack Developer">
+		<link rel="stylesheet" href="resources/styles.css">
+	</head>
+	<body>
+		<main>
+			<header class="card">
+				<h1>Luke Powell</h1>
+				<h2 class="text-secondary">Experiments</h2>
+				<p>A place to showcase HTML tags that I've learned about that did not have a clear use
+				elsewhere in the portfolio.</p>
+				<p class="text-link"><a href="./">Back</a></p>
+			</header>
+			
+			<br /><hr /><br />
+			
+			<ul>
+				<li class="card">
+					<h3 class="text-secondary">Code Tag</h3>
+					<p>I couldn't find a <em>great</em> place to put the <code>code</code> tag, so I thought this might be a clever way to include it!
+				</li>
+				
+				<br />
+				
+				<li class="card">
+					<h3 class="text-secondary">Pre Tag</h3>
+					<pre>
+	I
+	also
+	don't
+	think that
+	the pre tag
+	has a super great
+	use in this portfolio,
+	so I decided to make some
+	art out of it instead!!!!!
+					</pre>
+				</li>
+				
+				<br />
+				
+				<li class="card">
+					<h3 class="text-secondary">Audio Tag</h3>
+					<audio controls>
+						<source src="resources/laugh.wav" type="audio/wav" />
+					</audio>
+				</li>
+				
+				<br />
+				
+				<li class="card">
+					<h3 class="text-secondary">Video Tag</h3>
+					<video controls>
+						<source src="resources/videoplayback.mp4" type="video/mp4" />
+					</video>
+				</li>
+				
+				<br />
+				
+				<li class="card">
+					<h3 class="text-secondary">Table</h3>
+					<p>I couldn't find a good place for a table. None of my pages really called for it, so I added
+					one here!</p>
+					<table>
+						<caption>
+							A table showing some statistics on pages in this site
+						</caption>
+						<colgroup>
+							<col style="background-color:red" />
+							<col style="background-color:green" />
+							<col style="background-color:lightblue" />
+						</colgroup>
+						<tr>
+							<th># of pages needed table</th>
+							<th># pages that have table</th>
+							<th># of pages that are super awesome</th>
+						</tr>
+						<tr>
+							<td>0</td>
+							<td>1</td>
+							<td>5 (all of them)</td>
+						</tr>
+					</table>
+				</li>
+				
+				<br />
+				
+				<li class="card">
+					<h3 class="text-secondary">Drop-down Select</h3>
+					<p>Here is a showcase of a dropdown and all of its relevant tags.</p>
+					<label>
+						Favorite Color
+						<select id='select-color'>
+							<option>Select a Color</option>
+							<optgroup label="Cool colors">
+								<option>Blue</option>
+								<option>Red</option>
+								<option>Cyan</option>
+								<option>Orange</option>
+							</optgroup>
+							<optgroup label="Lame colors">
+								<option>Green</option>
+								<option>Yellow</option>
+								<option>Purple</option>
+								<option>Magenta</option>
+							</optgroup>
+						</select>
+					</label>
+				</li>
+				
+				<br />
+				
+				<li class="card">
+					<h3 class="text-secondary">Form</h3>
+					<form>
+						<fieldset>
+							<legend>What do you think Luke's favorites are?</legend>
+							<label>Color:</label>
+							<input type="text" id="fcolor" name="fcolor" />
+							<label>Food:</label>
+							<input type="text" id="ffood" name="ffood" />
+							<label>Video Game:</label>
+							<input type="text" id="fgame" name="fgame" />
+						</fieldset>
+					</form>
+				</li>
+				
+				<br />
+				
+				<li class="card">
+					<h3 class="text-secondary">Notepad</h3>
+					<p>Sometimes, I really just need to take some quick notes in a place that will instantly delete them if I refresh or leave the page!
+					<textarea id="notes" name="notes" rows="5" cols="50">Notes go here</textarea>
+				</li>
+				
+				<br />
+				
+				<li class="card">
+					<h3 class="text-secondary">Datalist</h3>
+					<p>I'm noticing that almost none of these tags are applicable to a portfolio. I'd have to seriously
+					think for a long time to figure out a reason someone would need to type to search through a list of
+					options in my portfolio...</p>
+					<input list="pointless" name="pointles" id="pointles">
+					<datalist id="pointless">
+						<option value="This">
+						<option value="Serves">
+						<option value="No">
+						<option value="Purpose">
+						<option value="Whatsoever">
+					</datalist>
+				</li>
+				
+				<br />
+				
+				<li class="card">
+					<h3 class="text-secondary">Button</h3>
+					<p>Seriously! I don't know what I need a button for. Maybe I'll figure out a use for it by the time I finish HW3...</p>
+					<button type=button>Button!!</button>
+				</li>
+				
+				<br />
+				
+				<li class="card">
+					<h3 class="text-secondary">Template</h3>
+					<p>If you look closely, you can see that there's nothing displayed here... without JavaScript being used to display it.</p>
+					<template><p>Hello!!!! I'm invisible!!!!</p></template>
+				</li>
+				
+				<br />
+				
+				<li class="card">
+					<h3 class="text-secondary">Canvas/script</h3>
+					<canvas id="myCanvas">
+						Browser does not support canvas tag, therefore content could not be displayed here.
+					</canvas>
+					<script>
+						var canvas = document.getElementById("myCanvas");
+						var ctx = canvas.getContext("2d");
+						ctx.fillStyle = "red";
+						ctx.fillRect(0, 0, 300, 300);
+					</script>
+				</li>
+				
+				<br />
+				
+				<li class="card">
+					<h3 class="text-secondary">SVG</h3>
+					<svg width="100" height="100">
+					  <circle cx="50" cy="50" r="40" stroke="black" stroke-width="4" fill="lightblue" />
+					</svg>
+				</li>
+			</ul>
+		</main>
+		
+		<br /><hr /><br />
+			
+		<details class="card">
+			<summary><p>Contact Information</p></summary>
+			<ul>
+				<li><a href="https://www.linkedin.com/in/luke-b-powell/"><p>LinkedIn</p></a></li>
+			</ul>
+		</details>
+	</body>
+</html>

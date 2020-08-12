@@ -1,0 +1,152 @@
+:root {
+	--main-bg-color: #133e85;
+	--secondary-bg-color: #5784d9;
+	--accent-bg-color: #daf2f0;
+	--main-fg-color: black;
+	
+	--main-font-color: black;
+	--secondary-font-color:#5f864b;
+	--accent-font-color:#817ea7;
+	
+	--hover-scale-amount:1.2;
+
+	background-image: linear-gradient(to right, var(--main-bg-color), var(--secondary-bg-color));
+
+	background-color:var(--main-bg-color);
+	font-family: customFont, Verdana;
+	font-display: swap;
+}
+
+.card {
+	border: 2px solid var(--main-fg-color);
+	padding-left:10px;
+	background-color:var(--accent-bg-color);
+	border-radius:8px;
+	width: 80VW;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.text-primary{
+	color:var(--main-font-color);
+}
+
+.text-secondary{
+	color:var(--secondary-font-color);
+	animation-name:colorchange;
+	animation-duration:4s;
+	animation-direction:alternate;
+	animation-iteration-count:infinite;
+}
+
+li.card {
+	list-style:none;
+	width: 70VW;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+li.card h3 {
+	color:var(--secondary-font-color);
+}
+
+.text-link {
+    transition: transform 1s;
+    transform-origin: left bottom;
+}
+
+.text-link:hover {
+	transform:scale(var(--hover-scale-amount));
+}
+
+@font-face {
+	font-family: customFont;
+	src: url(customFont.otf);
+}
+
+@keyframes colorchange {
+		from {color: var(--secondary-font-color);}
+		to {color:var(--accent-font-color);}
+}
+
+/* Computers */
+h1 {
+	font-size:40px;
+}
+
+h2 {
+	font-size:32px;
+}
+
+h3 {
+	font-size:28px;
+}
+
+p {
+	font-size:26px;
+}
+
+aside {
+	font-size:24px;
+}
+
+#img-luke{
+	width:auto;
+	height:50vh;
+	border: 2px solid var(--main-fg-color);
+}
+
+/* Tablets */
+@media only screen 
+and (max-device-width: 1024px){
+	h1 {
+		font-size:4vmax;
+	}
+
+	h2 {
+		font-size:3vmax;
+	}
+
+	h3 {
+		font-size:2vmax;
+	}
+
+	p {
+		font-size:2vmax;
+	}
+	
+	aside {
+		font-size:2vmax;
+	}
+
+	#img-luke{
+		width:auto;
+		height:50vh;
+		border: 2px solid var(--main-fg-color);
+	}
+}
+
+/* Phones */
+@media only screen and (max-device-width: 720px) {
+	h1 {
+		font-size:6vmax;
+	}
+
+	h2 {
+		font-size:5vmax;
+	}
+
+	h3 {
+		font-size:4vmax;
+	}
+
+	p {
+		font-size:4vmax;
+	}
+	
+	aside {
+		font-size:3vmax;
+	}
+}
